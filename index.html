@@ -1,77 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Início</title>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/telaInicial.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-    <style>
-        
-    </style>
 </head>
-<body>
+<body onresize="mudouTamanho()" onload="loadMenu()">
     <aside>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
+            close
+        </span>
         <nav id="menuLateral">
-            <div id="logo">Arte da Cópia</div>
-            <ul>
-                <li id="index"><a href="/">
-                    <span class="material-symbols-outlined">
-                        home</span> Início</a></li>
-
-                <li><a href="/produtos" id="produtos">
-                    <span class="material-symbols-outlined">
-                        local_mall</span> Produtos</a></li>
-
-                <li><a href="/clientes" id="clientes">
-                    <span class="material-symbols-outlined">
-                    person</span> Clientes</a></li>
-
-                <li><a href="/orcamentos" id="orcamentos">
-                    <span class="material-symbols-outlined">
-                    request_quote</span> Orçamentos</a></li>
-
-                <li><a href="/pedidos" id="pedidos">
-                        <span class="material-symbols-outlined">
-                        shopping_cart</span> Pedidos</a></li>
-
-                <li><a href="/estoque" id="estoque">
-                        <span class="material-symbols-outlined">
-                            inventory_2</span> Estoque</a></li>
-
-                <li><a href="/fornecedores" id="fornecedores">
-                        <span class="material-symbols-outlined">
-                            local_shipping</span> Fornecedores</a></li>
-
-                <li><a href="/relatorios" id="relatorios">
-                        <span class="material-symbols-outlined">
-                            insights</span> Relatórios</a></li>
-
-                <li><a href="/configuracoes" id="configuracoes">
-                    <span class="material-symbols-outlined">
-                        settings</span> Configurações</a></li> 
-
-            </ul>
+            <div id="menu">
+                <!-- Conteúdo carregado via loadMenu() -->
+            </div>
         </nav>
     </aside>
-    
-    <div id="situacaoAtual">
-        <div id="todos">
-            Todos
+    <main>
+        <h1>Bem-vindo ao Sistema da Gráfica Arte da Cópia!</h1>
+        <p>Use o menu lateral para navegar pelas diferentes seções do sistema.</p><br>
+        <div id="acoesRapidas">
+            Ações rápidas:
+            <ul id="menuAcoesRapidas">
+                <li><a href="/produtos">Novo Orçamento</a></li>
+                <li><a href="/clientes">Novo Pedido</a></li>
+                <li><a href="/orcamentos">Novo Cliente</a></li>
+            </ul>
         </div>
 
-        <div id="arte">
-            Criando Arte
+        <div id="statusDosPedidos">
+            <h2>Status Atual</h2>
+            <p id="quantidadeOrcamentos">Orçamentos: 5</p>
+            <p id="quantidadeAguardandoPagamento">Aguardando Pagamento: 3</p>
+            <p id="quantidadeCriandoArte">Criando Arte: 2</p>
+            <p id="quantidadeFaltaImprimir">Falta Imprimir: 4</p>
+            <p id="quantidadeEmProducao">Em Produção: 1</p>
+            <p id="quantidadePronto">Pronto: 2</p>
+            <p id="quantidadeEntregue">Entregue: 3</p>
         </div>
 
-        <div id="aguardando">
-            Aguardando Pagamento
+        <div id="estoqueBaixo">
+            Produtos com estoque baixo:
+            <div id="produtosComEstoqueBaixo">
+                <!-- Lista de produtos com estoque baixo carregada dinamicamente -->
+            </div>
         </div>
-
-        <div id="aprovado">
-            Aprovado
-        </div>
-    </div>
-
+    </main>
 </body>
+<script src="scripts/load.js"></script>
 </html>

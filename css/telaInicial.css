@@ -1,0 +1,43 @@
+body{
+    background-color: rgb(233, 249, 255);
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    margin-left: 275px;
+    padding: 35px;
+    background-color: rgb(233, 249, 255);
+}
+
+ul#menuAcoesRapidas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style-type: none;
+}
+
+ul#menuAcoesRapidas li {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+ul#menuAcoesRapidas li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+ul#menuAcoesRapidas li a {
+    text-decoration: none;
+    color: #021f3f;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}

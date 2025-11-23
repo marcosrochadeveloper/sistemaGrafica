@@ -1,0 +1,19 @@
+<!--
+<div id="situacaoAtual">
+    <div id="todos">
+        Todos
+    </div>
+
+    <div id="arte">
+        Criando Arte
+    </div>
+
+    <div id="aguardando">
+        Aguardando Pagamento
+    </div>
+
+    <div id="aprovado">
+        Aprovado
+    </div>
+</div>
+-->
