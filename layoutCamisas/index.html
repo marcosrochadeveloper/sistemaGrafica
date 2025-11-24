@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Camisas</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            width: 100vw;
+            height: 100vh;
+        }
+        #folhaA4 {
+            width: 800px;
+            height: 500px;
+            border: 1px solid black;
+            margin: auto;
+            top: 50%;
+            transform: translateY(-50%);
+            position: relative;
+        }
+
+        #layout {
+            width: 50%;
+            height: 100%;
+            border: 1px dashed gray;
+            right: 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #imagem {
+            width: 90%;
+            height: 30%;
+            border: 1px solid blue;
+            margin: 5px auto;
+        }
+        #tipoDeTecido {
+            width: 90%;
+            height: 10%;
+            border: 1px solid green;
+            margin: 5px auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="folhaA4">
+        <div id="layout">
+            <div id="imagem">
+                <!--Imagem injetada via JS do layout da camisa -->
+            </div>
+
+            <div id="tipoDeTecido">
+                <!--Tipo de tecido injetado via JS do layout da camisa-->
+            </div>
+
+            <div id="tamanhosDasCamisas">
+                <!--Tamanhos das camisas injetados via JS do layout da camisa-->
+            </div>
+
+            <div id="datasENota">
+                <!--Datas injetadas via JS do layout da camisa-->
+                <div id="dataChegadaDoPapel">
+                    <!--Data de chegada do papel injetada via JS do layout da camisa-->
+                </div>
+
+                <div id="dataEntrega">
+                    <!--Data de entrega injetada via JS do layout da camisa-->
+                </div>
+
+                <div id="dataEstampada">
+                    <!--Data em que as camisas foram estampadas injetada via JS do layout da camisa-->
+                </div>
+
+                <div id="numeroDaNota">
+                    <!--Número da nota injetado via JS do layout da camisa-->
+                </div>
+            </div>
+
+            <div id="observacoes">
+                <!--Observações injetadas via JS do layout da camisa-->
+            </div>
+
+            <div id="responsavel">
+                <!--Nome do responsável injetado via JS do layout da camisa-->
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
