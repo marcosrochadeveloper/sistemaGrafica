@@ -11,6 +11,8 @@
             box-sizing: border-box;
             width: 100vw;
             height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
         }
         #folhaA4 {
             width: 800px;
@@ -33,15 +35,63 @@
         }
         #imagem {
             width: 90%;
-            height: 30%;
+            height: 25%;
             border: 1px solid blue;
             margin: 5px auto;
         }
-        #tipoDeTecido {
+
+        #obsPedido {
+            width: 90%;
+            height: 8%;
+            border: 1px solid pink;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        #tamanhosDasCamisas {
+            width: 90%;
+            height: 25%;
+            border: 1px solid red;
+            margin: 5px auto;
+            text-align: center;
+        }
+
+        #datasENota {
             width: 90%;
             height: 10%;
-            border: 1px solid green;
+            border: 1px solid orange;
             margin: 5px auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        #datasControle {
+            width: 90%;
+            height: 7%;
+            border: 1px solid brown;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        #observacoes {
+            width: 90%;
+            height: 15%;
+            border: 1px solid purple;
+            margin: 5px auto;
+            text-align: left;
+        }
+
+        #infoPedido {
+            width: 90%;
+            height: 5%;
+            border: 1px solid black;
+            margin: 5px auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
     </style>
 </head>
@@ -49,44 +99,57 @@
     <div id="folhaA4">
         <div id="layout">
             <div id="imagem">
+                img
                 <!--Imagem injetada via JS do layout da camisa -->
             </div>
 
-            <div id="tipoDeTecido">
-                <!--Tipo de tecido injetado via JS do layout da camisa-->
-            </div>
-
-            <div id="tamanhosDasCamisas">
-                <!--Tamanhos das camisas injetados via JS do layout da camisa-->
-            </div>
-
-            <div id="datasENota">
-                <!--Datas injetadas via JS do layout da camisa-->
-                <div id="dataChegadaDoPapel">
-                    <!--Data de chegada do papel injetada via JS do layout da camisa-->
-                </div>
-
-                <div id="dataEntrega">
-                    <!--Data de entrega injetada via JS do layout da camisa-->
-                </div>
-
-                <div id="dataEstampada">
-                    <!--Data em que as camisas foram estampadas injetada via JS do layout da camisa-->
-                </div>
+            <div id="obsPedido">
+                <div id="tipoDeTecido">
+                    TECIDO: POLIÉSTER
+                    <!--Tipo de tecido injetado via JS do layout da camisa-->
+               </div>
 
                 <div id="numeroDaNota">
+                    OS Nº: ___________
                     <!--Número da nota injetado via JS do layout da camisa-->
                 </div>
             </div>
 
+
+
+            <div id="tamanhosDasCamisas">
+                TAMANHOS:
+                <!--Tamanhos das camisas injetados via JS do layout da camisa-->
+            </div>
+
+            <div id="datasControle">
+                <div id="dataChegadaDoPapel">
+                PAPEL CHEGOU:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/
+                <!--Data de chegada do papel injetada via JS do layout da camisa-->
+                </div>
+
+                <div id="dataEstampada">
+                    ESTAMPADO:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/
+                    <!--Data em que as camisas foram estampadas injetada via JS do layout da camisa-->
+                </div>
+            </div>
+
             <div id="observacoes">
+                OBSERVAÇÕES:
                 <!--Observações injetadas via JS do layout da camisa-->
             </div>
 
-            <div id="responsavel">
+            <div id="infoPedido">
+                <div id="responsavel">
+                RESPONSÁVEL: EDUARDA
                 <!--Nome do responsável injetado via JS do layout da camisa-->
-            </div>
+                </div>
 
+                <div id="dataEntrega">
+                    DATA DE ENTREGA:  /   /
+                    <!--Data de entrega injetada via JS do layout da camisa-->
+                </div>
+            </div>
         </div>
     </div>
 </body>
